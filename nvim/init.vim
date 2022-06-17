@@ -271,3 +271,4 @@ let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name dist -o -name .n
 " Y-i-w
 " v-i-w
 " C-a + , ( C-a, ) renoimeia a tab do Tmux 
+"
