@@ -36,6 +36,10 @@ set printfont=:h10
 set printencoding=utf-8
 set printoptions=paper:letter
 
+" clipboard stuff
+set pastetoggle=<F2> "enable paste mode
+set clipboard=unnamedplus
+
 " coc config
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
@@ -196,6 +200,7 @@ Plug 'editorconfig/editorconfig-vim'
 " git related stuff
 Plug 'airblade/vim-gitgutter'
 Plug 'jreybert/vimagit'
+Plug 'APZelos/blamer.nvim'
 
 " Bottom line 
 Plug 'vim-airline/vim-airline'
@@ -265,10 +270,11 @@ let g:ale_lint_on_insert_leave=1
 " Ignore node_modules on FzF search with :Files
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name dist -o -name .nuxt -o -name .git \) -prune -o -print'
 
+" Enable blamer (GitLens) on (neo)vim startup
+let g:blamer_enabled = 1
 
 " Comandos uteis 
 " C-a + elemento ( C-a{ ) Deleta tudo daqueleas chaves
 " Y-i-w
 " v-i-w
 " C-a + , ( C-a, ) renoimeia a tab do Tmux 
-"
